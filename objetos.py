@@ -1,17 +1,20 @@
-class Carro:
-    def __init__(self, tipo = 'Corsa'):
-        self.tipo = tipo #Dizendo que o padrão é Corsa e que ele pegará o que vier passado no parâmetro
+print("porra")
+class Cachorro:
+    def __init__(self, nome): #Método construtor com 1 argumento
+        self.nome = nome
 
-    def tipoCarro(self):
-        return self.tipo
+    def get_nome(self):
+        return self.nome
 
+    def set_nome(self, nome):
+        self.nome = nome
+
+    def latir(self):
+        print("está latindo")
+
+    def comer(self):
+        print(" agora está comendo")
 def main():
-    carro1 = Carro()
-    print(carro1.tipoCarro())
-    carro2 = Carro("Ka")
-    print(carro2.tipoCarro())
-    carro3 = Carro()
-    x = carro3.tipoCarro()
-    print(x)
-
-if __name__ == "__main__": main()
+    dog = Cachorro()
+    dog.latir()
+    print(dog.get_nome())
